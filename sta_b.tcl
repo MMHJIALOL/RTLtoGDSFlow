@@ -1,0 +1,9 @@
+read_liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog synth_a_netlist.v
+
+link_design rtl_topmodule
+read_sdc constraints_b.sdc
+
+report_clocks
+report_checks
+report_timing

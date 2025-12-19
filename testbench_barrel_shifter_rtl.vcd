@@ -1,0 +1,210 @@
+$date
+	Wed Dec 17 18:57:54 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module testbench_barrel_shifter_rtl $end
+$var wire 11 ! out [10:0] $end
+$var reg 10 " A [9:0] $end
+$var reg 9 # C [8:0] $end
+$var reg 1 $ clk $end
+$var reg 1 % rst $end
+$scope module dut $end
+$var wire 10 & A [9:0] $end
+$var wire 9 ' C [8:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % rst $end
+$var wire 10 ( shifter_out [9:0] $end
+$var wire 1 ) parity_out $end
+$var wire 10 * lfsr_out [9:0] $end
+$var wire 1 + clk_div $end
+$var reg 10 , A_reg [9:0] $end
+$var reg 9 - C_reg [8:0] $end
+$var reg 11 . out [10:0] $end
+$var reg 11 / out_reg [10:0] $end
+$scope module u1 $end
+$var wire 1 $ clk_in $end
+$var wire 1 0 rst $end
+$var parameter 32 1 div_value $end
+$var reg 1 + clk_out $end
+$var reg 4 2 count [3:0] $end
+$upscope $end
+$scope module u2 $end
+$var wire 10 3 data_in [9:0] $end
+$var wire 3 4 shift_amt [2:0] $end
+$var reg 10 5 data_out [9:0] $end
+$upscope $end
+$scope module u3 $end
+$var wire 1 $ clk $end
+$var wire 1 % rst $end
+$var parameter 32 6 WIDTH $end
+$var reg 10 7 rnd [9:0] $end
+$upscope $end
+$scope module u4 $end
+$var wire 10 8 data_in [9:0] $end
+$var wire 1 ) parity $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$dumpall
+b1010 6
+b100 1
+$end
+#0
+$dumpvars
+bx 8
+bx 7
+bx 5
+bx 4
+bx 3
+b0 2
+z0
+b0xxxxxxxxxx /
+bx .
+bx -
+bx ,
+0+
+bx *
+x)
+bx (
+b0 '
+b0 &
+0%
+0$
+b0 #
+b0 "
+bx !
+$end
+#5000
+b0 4
+b0 (
+b0 5
+b0 /
+b1 2
+b0 -
+0)
+b0 ,
+b0 3
+b0 8
+b0xxxxxxxxxx !
+b0xxxxxxxxxx .
+1$
+#10000
+0$
+#15000
+b10 2
+b0 !
+b0 .
+1$
+#20000
+b1111111111 *
+b1111111111 7
+0$
+1%
+#25000
+b11 2
+1$
+#30000
+0$
+#35000
+b1 /
+1+
+b0 2
+1$
+#40000
+0$
+b1101 "
+b1101 &
+b1000110 #
+b1000110 '
+0%
+#45000
+b110 4
+b1101000000 (
+b1101000000 5
+b1101000000 /
+b1 2
+b1111111110 *
+b1111111110 7
+b1000110 -
+1)
+b1101 ,
+b1101 3
+b1101 8
+b1 !
+b1 .
+1$
+#50000
+0$
+#55000
+b10 2
+b1111111100 *
+b1111111100 7
+b1101000000 !
+b1101000000 .
+1$
+#60000
+0$
+#65000
+b11 2
+b1111111000 *
+b1111111000 7
+1$
+#70000
+0$
+#75000
+0+
+b0 2
+b1111110000 *
+b1111110000 7
+1$
+#80000
+0$
+#85000
+b1 2
+b1111100000 *
+b1111100000 7
+1$
+#90000
+0$
+#95000
+b10 2
+b1111000000 *
+b1111000000 7
+1$
+#100000
+0$
+#105000
+b11 2
+b1110000000 *
+b1110000000 7
+1$
+#110000
+0$
+#115000
+1+
+b0 2
+b1100000001 *
+b1100000001 7
+1$
+#120000
+0$
+#125000
+b1 2
+b1000000011 *
+b1000000011 7
+1$
+#130000
+0$
+#135000
+b10 2
+b111 *
+b111 7
+1$
+#140000
+0$

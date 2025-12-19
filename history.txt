@@ -1,0 +1,544 @@
+    1  sl
+    2  ls
+    3  cd test
+    4  ls
+    5  gvim hmm.txt 
+    6  git clone https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts.git
+    7  ls
+    8  wc -l OpenROAD-flow-scripts/
+    9  cd OpenROAD-flow-scripts/
+   10  ls
+   11  cd flow/
+   12  ls
+   13  cd platforms/
+   14  ls
+   15  cd nangate45/
+   16  ls
+   17  cd lib/
+   18  ls
+   19  gvim NangateOpenCellLibrary_typical.lib 
+   20  grep leakage NangateOpenCellLibrary_typical.lib 
+   21  grep --help
+   22  grep -l leakage NangateOpenCellLibrary_typical.lib 
+   23  grep -c leakage NangateOpenCellLibrary_typical.lib 
+   24  clear
+   25  gvim NangateOpenCellLibrary_typical.lib 
+   26  pwd
+   27  ls
+   28  cd OpenROAD-flow-scripts/flow
+   29  make DESIGN=macs PLATFORM=nangate45
+   30  cd ..
+   31  ls
+   32  cd ..
+   33  ls
+   34  make DESIGN=macs PLATFORM=nangate45
+   35  ls
+   36  cd scripts/
+   37  ./setup.sh
+   38  cd ..
+   39  cd OpenROAD-flow-scripts
+   40  ./setup.sh
+   41  cd ~/OpenROAD-flow-scripts
+   42  ls
+   43  ./setup.sh
+   44  sudo ./setup.sh
+   45  ls
+   46  cd flow/
+   47  make DESIGN=macs PLATFORM=nangate45
+   48  ls OpenROAD-flow-scripts/tools/install/yosys/bin/yosys
+   49  cd ~/OpenROAD-flow-scripts
+   50  rm -rf tools/install/yosys  # clean broken install
+   51  sudo ./setup.sh | tee setup_log.txt
+   52  sudo apt install yosys
+   53  cd ~/OpenROAD-flow-scripts/flow
+   54  make DESIGN=macs PLATFORM=nangate45
+   55  tools/install/yosys/bin/yosys
+   56  ls
+   57  cd ..
+   58  ls
+   59  cd tools/
+   60  ls
+   61  ls yos
+   62  cd yosys
+   63  ls
+   64  which yosys
+   65  mkdir -p ~/OpenROAD-flow-scripts/tools/install/yosys/bin
+   66  ln -s /usr/bin/yosys ~/OpenROAD-flow-scripts/tools/install/yosys/bin/yosys
+   67  cd ~/OpenROAD-flow-scripts/flow
+   68  make DESIGN=macs PLATFORM=nangate45
+   69  cd ~/OpenROAD-flow-scripts/flow
+   70  make DESIGN=macs PLATFORM=nangate45
+   71  mkdir -p ~/OpenROAD-flow-scripts/tools/install/yosys/bin
+   72  ln -sf /usr/bin/yosys ~/OpenROAD-flow-scripts/tools/install/yosys/bin/yosys
+   73  ls -l ~/OpenROAD-flow-scripts/tools/install/yosys/bin/yosys
+   74  cd ~/OpenROAD-flow-scripts/flow
+   75  make DESIGN=macs PLATFORM=nangate45
+   76  ls
+   77  cd
+   78  mkdir Project
+   79  cd Project/
+   80  gvim netlist.v
+   81  pwd
+   82  history
+   83  cp /home/ishaan/OpenROAD-flow-scripts/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib .
+   84  ls
+   85  gvim leakage_parser.py
+   86  python3 leakage_parser.py
+   87  gvim leakage_parser.py 
+   88  python3 leakage_parser.py
+   89  grep -i "cell(" NangateOpenCellLibrary_typical.lib | head -20
+   90  head NangateOpenCellLibrary_typical.lib 
+   91  grep -i "cell" NangateOpenCellLibrary_typical.lib | head -20
+   92  gvim leakage_parser.py 
+   93  python3 leakage_parser.py 
+   94  cd
+   95  ls
+   96  cd
+   97  ls
+   98  cd O
+   99  cd OpenROAD-flow-scripts/
+  100  ls
+  101  cd flow/
+  102  ls
+  103  cd designs/
+  104  ls
+  105  cd nangate45/
+  106  ls
+  107  cd ..
+  108  ls
+  109  cd ..
+  110  ls
+  111  cd scripts/
+  112  ls
+  113  cd ..
+  114  ls
+  115  history
+  116  ls
+  117  cd platforms/
+  118  ls
+  119  cd nangate45/
+  120  ls
+  121  cd lib/
+  122  ls
+  123  pwd
+  124  s
+  125  \ls
+  126  clear
+  127  lsl
+  128  ls
+  129  clear
+  130  ls -lthr
+  131  cd Project/
+  132  ls
+  133  g leakage_parser.py 
+  134  alias g gvim
+  135  g leakage_parser.py 
+  136  gvim leakage_parser.py 
+  137  g netlist.v 
+  138  gvim netlist.v 
+  139  gvim NangateOpenCellLibrary_typical.lib 
+  140  sudo apt-get update
+  141  sudo apt-get install -y --no-install-recommends build-essential ca-certificates gcc-multilib git iverilog verilator wget
+  142  wget https;//release./bambuhls.eu/appimage/bambu-0.9.7.AppImage
+  143  wget https://release./bambuhls.eu/appimage/bambu-0.9.7.AppImage
+  144  wget https://release.bambuhls.eu/appimage/bambu-0.9.7.AppImage
+  145  sudo add-apt-repository universe
+  146  sudo apt install libfuse2
+  147  ./bambu-0.9.7.AppImage <path-to-c-file> --top-fname=<accelerator-function-to-be-
+  148  implemented-in-hardware>
+  149  ls
+  150  ./bambu-0.9.7.AppImage <path-to-c-file> --top-fname=<accelerator-function-to-be-
+  151  implemented-in-hardware>
+  152  ls bambu-0.9.7.AppImage
+  153  ls bambu-0.9.7.AppImage/
+  154  clear
+  155  ls
+  156  chmod +x bambu-0.9.7.AppImage
+  157  ls
+  158  ./bambu-0.9.7.AppImage <path-to-c-file> --top-fname=<accelerator-function-to-be-
+  159  implemented-in-hardware>
+  160  sudo add-apt-repository universe
+  161  sudo apt install libfuse2
+  162  ./bambu-0.9.7.AppImage 
+  163  ./bambu-0.9.7.AppImage/1
+  164  ./bambu-0.9.7.AppImage.1
+  165  chmod +x bambu-0.9.7.AppImage.1
+  166  ./bambu-0.9.7.AppImage.1
+  167  ./bambu-0.9.7.AppImage.1 <path-to-c-file> --top-fname=<accelerator-function-to-be-
+  168  implemented-in-hardware>
+  169  ls
+  170  cd VLSItoRTLDesignFlowProject/
+  171  gtkwave testbench1.vcd 
+  172  gvim dump.vcd 
+  173  gvim testbench1.vcd 
+  174  vvp  testbench1.vcd 
+  175  vvp testbench1.vcd 
+  176  vpp testbench1.vcd 
+  177  iverilog -o sim rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_1.v
+  178  vpp testbench1.vcd 
+  179  vvp testbench1.vcd 
+  180  gvim testbench1.vcd 
+  181  vvp testbench1.vcd 
+  182  iverilog -o sim rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_1.v
+  183  vvp testbench1.vcd 
+  184  vvp sim
+  185  gtkwave testbench1.vcd 
+  186  git clone https :// github . com / chiphackers / covered 
+  187  git clone https://github.com/chiphackers/covered 
+  188  ls
+  189  cd covered`
+  190  cd covered/
+  191  ls
+  192  ./configure
+  193  make
+  194  cd ..
+  195  ls
+  196  cd ..
+  197  ls
+  198  git clone https://github.com/chiphackers/covered 
+  199  cd VLSItoRTLDesignFlowProject/
+  200  ls
+  201  cd covered/
+  202  ./configure
+  203  sudo apt install gperf
+  204  ./configure
+  205  sudo apt - get install zlib1g - dev
+  206  sudo apt-get install zlib1g-dev
+  207  sudo apt update
+  208  git clone https://git.savannah.gnu.org/git/libiconv.git
+  209  ls
+  210  cd ..
+  211  s
+  212  ls
+  213  clear
+  214  covered score -v rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v               -t testbench_1 -vcd testbench1.vcd -o coverage.cdd
+  215  sudo apt install covered
+  216  covered score -v rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v               -t testbench_1 -vcd testbench1.vcd -o coverage.cdd
+  217  ls
+  218  covered score     -v rtl_topmodule.v     -v clk_divider.v     -v barrel_shifter.v     -v lfsr.v     -v parity_gen.v     -t testbench_1     -vcd testbench1.vcd     -o coverage.cdd
+  219  covered score     -v rtl_topmodule.v     -v clk_divider.v     -v barrel_shifter.v     -v lfsr.v     -v parity_gen.v     -v testbench_1.v     -t testbench_1     -vcd testbench1.vcd     -o coverage.cdd
+  220  covered report -d coverage.cdd > coverage_report.txt
+  221  ls
+  222  covered score     -v rtl_topmodule.v     -v clk_divider.v     -v barrel_shifter.v     -v lfsr.v     -v parity_gen.v     -v testbench_1.v     -t testbench_1     -vcd testbench1.vcd     -o coverage.cdd
+  223  gvim testbench_1.v 
+  224  iverilog -o sim rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_1.v
+  225  vvp sim
+  226  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd dump.vcd   -o coverage.cdd
+  227  covered report -d coverage.cdd > coverage_report.txt
+  228  vim testbench_1.v 
+  229  iverilog -o sim rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_1.v
+  230  vvp sim
+  231  gtkwave dump.vcd
+  232  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd dump.vcd   -o coverage.cdd
+  233  covered report -d coverage.cdd > coverage_report.txt
+  234  covered report -t all -d coverage.cdd > coverage_report.txt
+  235  covered score -v rtl_topmodule.v -v clk_divider.v -v barrel_shifter.v -v lfsr.v -v parity_gen.v -v testbench_1.v -t testbench_1 -vcd dump.vcd -o coverage.cdd
+  236  covered report -d coverage.cdd > coverage_report.txt
+  237  vim testbench_1.v 
+  238  iverilog -o sim rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_1.v
+  239  vvp sim
+  240  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd dump.vcd   -o coverage.cdd
+  241  covered report -d coverage.cdd > coverage_report.txt
+  242  clear
+  243  vim testbench_1.v 
+  244  iverilog -o sim rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_1.v
+  245  vvp sim\
+  246  vvp sim
+  247  clear
+  248  cd covered/
+  249  ls
+  250  clear
+  251  ./configire
+  252  ./configure
+  253  sudo apt - get install tcl8 .6
+  254  sudo apt-get install tcl8.6
+  255  sudo apt-get install tcl8.6-dev
+  256  sudo apt-get install tk8.6
+  257  sudo apt-get install tk8.6-dev
+  258  sudo apt-get install doxygen
+  259  git clone --depth=1 https://git.savannah.gnu.org/git/libiconv.git
+  260  git clone https://git.savannah.gnu.org/git/libiconv.git
+  261  ./configure
+  262  sudo make install
+  263  make
+  264  cd ..
+  265  ls
+  266  cd covered/
+  267  cd src/
+  268  gedit report.c
+  269  gvim report.c
+  270  make
+  271  cd ..
+  272  ls
+  273  cd ..
+  274  ls
+  275  clear
+  276  vvp sim
+  277  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd dump.vcd   -o coverage.cdd
+  278  covered report -d v Mycounter . cdd
+  279  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd dump.vcd   -o coverage.cdd
+  280  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  281  covered report -d coverage.cdd > coverage_report.txt
+  282  covered report -d all -c coverage.cdd
+  283  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  284  covered report -d all -c coverage.cdd
+  285  covered report -c coverage.cdd
+  286  ls -lthr
+  287  g coverage_report.txt 
+  288  gvim coverage_report.txt 
+  289  gvim coverage.cdd
+  290  gvim testbench_1.v 
+  291  iverilog -o sim.out rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_1.v
+  292  vvp sim.out
+  293  ls -lh testbench1.vcd
+  294  time
+  295  date
+  296  head -n 20 testbench1.vcd 
+  297  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  298  vim testbench_1.v 
+  299  iverilog -o sim.out rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_1.v
+  300  vvp sim.out
+  301  vim testbench1.vcd 
+  302  gvim testbench1.vcd 
+  303  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  304  vim testbench1.vcd 
+  305  vim testbench_1.v 
+  306  iverilog -o sim.out rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_1.v
+  307  vvp sim.out
+  308  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  309  gvim testbench
+  310  gvim testbench1.vcd 
+  311  gtkwave testbench1.vcd 
+  312  git clone --depth=1 https://git.savannah.nongnu.org/git/covered.git
+  313  cd covered
+  314  ./configure
+  315  make
+  316  sudo make install
+  317  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  318  ls
+  319  cd ..
+  320  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  321  clear
+  322  ls
+  323  gvim testbench_1.v 
+  324  cd
+  325  ls
+  326  gvim ~/gvimrc
+  327  mv VLSItoRTLDesignFlowProject/ RTLtoGDSDesignFlowProejct
+  328  ls
+  329  cd RTLtoGDSDesignFlowProejct/
+  330  ls
+  331  clear
+  332  gvim testbench_1.v 
+  333  cd
+  334  gvim gvimrc
+  335  cd RTLtoGDSDesignFlowProejct/
+  336  gvim clk_divider.v 
+  337  cd
+  338  gvim ~/.gvimrc
+  339  ;s
+  340  ls
+  341  cd RTLtoGDSDesignFlowProejct/
+  342  gvim clk_divider.v 
+  343  cd ..
+  344  ls
+  345  gvim ~/.gvimrc
+  346  cd RTLtoGDSDesignFlowProejct/
+  347  gvim clk.rpt
+  348  ls
+  349  gvim testbench_1.v 
+  350  cd 
+  351  gvim ~/.gvimrc
+  352  cd RTLtoGDSDesignFlowProejct/
+  353  gvim testbench_1.v 
+  354  gvim original_testbench_1.v
+  355  gvim -O original_testbench_1.v testench_1.v
+  356  gvim -O original_testbench_1.v testbench_1.v 
+  357  iverilog -o sim.out rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_1.v
+  358  ls -lthr
+  359  vvp sim.out
+  360  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  361  gvim clk_divider.v 
+  362  gvim testbench_1.v 
+  363  vim testbench_1.v 
+  364  iverilog -o sim.out rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_1.v
+  365  vvp sim.out
+  366  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  367  rm testbench1.vcd
+  368  gvim testbench_1.v 
+  369  vvp sim > testbench1.vcd
+  370  iverilog -o sim testbench_1.v rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v
+  371  vvp sim
+  372  head testbench1.vcd
+  373  covered score -vcd testbench1.vcd -dir ./ -t testbench_1.v
+  374  covered score -h
+  375  covered score -vcd testbench1.vcd -t testbench_1.v rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v
+  376  gvim testbench_1.v 
+  377  covered score -vcd testbench1.vcd -t testbench_1.v rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v
+  378  covered score -vcd testbench1.vcd -t testbench_1 rtl_topmodule clk_divider barrel_shifter lfsr parity_gen
+  379  ls
+  380  covered score -vcd testbench1.vcd -t testbench_1 rtl_topmodule clk_divider barrel_shifter lfsr parity_gen testbench_1.v rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v
+  381  covered score -vcd testbench1.vcd -t testbench_1 rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v
+  382  clear
+  383  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  384  gvim testbench_1.v 
+  385  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  386  gvim testbench_1.v 
+  387  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cddcovered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  388  clear
+  389  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cddcovered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  390  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  391  gvim testbench_1.v
+  392  iverilog -o sim.out rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_1.v
+  393  vvp sim.out
+  394  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  395  grep -n "Show" testbench1.vcd | head
+  396  sed -i '/Show the parameter values/d' testbench1.vcd
+  397  covered score -v ... -t testbench_1 -vcd testbench1.vcd -o coverage.cdd
+  398  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  399  ls -lthr
+  400  covered report -d coverage.cdd -o coverage_report.txt
+  401  covered report -c coverage.cdd -d line -o coverage_report.txt
+  402  covered report -c coverage.cdd -d all -html -o coverage_report.html
+  403  covered report -d line -o coverage_report.txt -c coverage.cdd
+  404  covered report [options like -d, -o, -html] -c <coverage.cdd>
+  405  sudo apt remove covered
+  406  git clone https://github.com/tv42/covered.git
+  407  cd covered
+  408  ./configure && make && sudo make install
+  409  cd coverage
+  410  ls
+  411  cd ..
+  412  covered report -c coverage.cdd -d line -o coverage_report.txt
+  413  covered report -d coverage.cdd -o coverage_report.txt
+  414  la
+  415  ls
+  416* ls -lthrcovered report -d line -o coverage_report.txt -c coverage.cdd
+  417  covered report -d line -o coverage_report.txt -c coverage.cdd
+  418  cd ..
+  419  ls
+  420  sudo apt remove covered
+  421  git clone https://github.com/tv42/covered.git
+  422  cd covered
+  423  ./configure && make && sudo make install
+  424  git clone https://github.com/tv42/covered.git
+  425  sudo apt remove covered
+  426  git clone https://github.com/tv42/covered.git
+  427  cd covered
+  428  ./configure && make && sudo make install
+  429  cd ../RTLtoGDSDesignFlowProejct/
+  430  covered report -d line -o coverage_report.txt -c coverage.cdd
+  431  which covered
+  432  find ~/ -name covered -type f 2>/dev/null | grep bin
+  433  cd ..
+  434  ls
+  435  sudo apt install coverage
+  436  sudo apt install code coverage
+  437  sudo apt update
+  438  sudo apt install build-essential git tcl-dev tk-dev libx11-dev
+  439  git clone https://git.savannah.gnu.org/git/covered.git
+  440  cd covered
+  441  rm covered
+  442  ls
+  443  cd ..
+  444  ls
+  445  git clone https://git.savannah.gnu.org/git/covered.git
+  446  cd covered/
+  447  ./configure
+  448  make
+  449  sudo make install
+  450  ls
+  451  cd
+  452  ./configure
+  453  ls
+  454  rm covered 
+  455  rm -rf covered 
+  456* sudo apt update 
+  457  sudo apt install build-essential git tcl-dev tk-dev libx11-dev
+  458  git clone https://git.savannah.gnu.org/git/covered.git
+  459  cd covered
+  460  mkdir covered 
+  461  git clone https://git.savannah.gnu.org/git/covered.git
+  462  git clone https://github.com/chiphackers/covered.git
+  463  cd covered
+  464  sudo apt update
+  465  sudo apt install build-essential git tcl-dev tk-dev libx11-dev
+  466  ./configure
+  467  make
+  468  sudo make install
+  469  covered -v
+  470  git clone https://github.com/chiphackers/covered.git
+  471  cd covered
+  472  sudo apt update
+  473  sudo apt install build-essential automake autoconf libtool                  tcl-dev tk-dev libx11-dev git
+  474  ./bootstrap
+  475  ./configure
+  476  make
+  477  which covered
+  478  covered -v
+  479  vf
+  480  cd
+  481  cd RTLtoGDSDesignFlowProejct/
+  482  ls
+  483  covered report -c coverage.cdd -d line -o coverage_report.txt
+  484  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  485  clear
+  486  cls
+  487  ls
+  488  rm -rf covered
+  489  ls
+  490  rm -rf covered
+  491  cd covered
+  492  ls
+  493  rm autom4te.cache/
+  494  rm -rf autom4te.cache/
+  495  cd .
+  496  ls -ld covered
+  497  cd ..
+  498  ls -ld covered
+  499  sudo rm -rf covered
+  500  ls
+  501  clear
+  502  ls
+  503  cd ..
+  504  ls
+  505  sudo rm -rf covered
+  506  ls
+  507  sudo apt update
+  508  sudo apt install git build-essential autoconf automake libtool
+  509  git clone https://git.code.sf.net/p/covered/code covered
+  510  cd covered
+  511  mkdir covered
+  512  git clone https://git.code.sf.net/p/covered/code covered
+  513  git clone https://github.com/chiphackers/covered.git
+  514  cd covered
+  515  ./configure
+  516  make
+  517  sudo make install
+  518  sudo apt update
+  519  sudo apt install covered covered-doc
+  520  covered -v
+  521  cd 
+  522  ls
+  523  clear
+  524  ls
+  525  cd RTLtoGDSDesignFlowProejct/
+  526  ls
+  527  ls -lthr
+  528  covered report -d line -o coverage_report.txt -c coverage.cdd
+  529  covered report -c coverage.cdd -d line -o coverage_report.txt
+  530  covered report -c coverage.cdd -o coverage_report.txt -d line
+  531* 
+  532  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_1.v   -t testbench_1   -vcd testbench1.vcd   -o coverage.cdd
+  533  covered report -d v coverage.cdd > coverage_report.txt
+  534  ls -lthr
+  535  gvim coverage_report.txt 
+  536  gvim testbench_2.v
+  537  vim testbench_2.v 
+  538  iverilog -o sim2 rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench_2.v
+  539  vvp sim2
+  540  gtkwave dump2.vcd
+  541  covered score   -v rtl_topmodule.v   -v clk_divider.v   -v barrel_shifter.v   -v lfsr.v   -v parity_gen.v   -v testbench_2.v   -t testbench_2   -vcd dump2.vcd   -o coverage2.cdd
+  542  covered report -d coverage2.cdd > coverage2_report.txt
+  543  history
+  544  history > hello.txt

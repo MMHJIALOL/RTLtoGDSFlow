@@ -1,0 +1,43 @@
+# ==================================
+# PART 4 : LOGICAL EQUIVALENCE CHECK
+# Yosys-safe, hierarchy-preserving
+# ==================================
+
+# ---- Load Sky130 library ----
+read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# ---- Read RTL (golden) ----
+read_verilog rtl_topmodule.v
+read_verilog clk_divider.v
+read_verilog barrel_shifter.v
+read_verilog lfsr.v
+read_verilog parity_gen.v
+
+hierarchy -top rtl_topmodule
+prep -top rtl_topmodule
+
+# ---- Save RTL state ----
+design -stash gold
+
+# ---- Reset ----
+design -reset
+
+# ---- Load Sky130 again ----
+read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80.lib
+
+# ---- Read synthesized netlist (revised) ----
+read_verilog synth_a_netlist.v
+
+hierarchy -top rtl_topmodule
+prep -top rtl_topmodule
+
+# ---- Save gate state ----
+design -stash gate
+
+# ---- Load both designs ----
+design -load gold
+design -load gate
+
+# ---- Run equivalence checking ----
+equiv_simple
+equiv_status -assert
