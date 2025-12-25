@@ -1,120 +1,112 @@
-VLSI Design Flow RTL to GDS
+# VLSI Design Flow RTL to GDS
 
-This project shows a complete VLSI design flow using only open source tools.
-The flow starts from RTL design and goes up to synthesis, timing analysis, and equivalence checking.
+This project demonstrates a complete VLSI design flow using only open source tools.
+The flow starts from RTL design and goes up to synthesis, timing analysis, and logical equivalence checking.
 
-The main goal is to understand how industry style digital design works without using paid EDA tools.
+The aim of this project is to understand an industry style digital design flow without using licensed EDA tools.
 
-Project Overview
+---
 
-The design is written in Verilog and includes multiple logic blocks.
-A top level module selects which block to use based on a control input.
+## Project Overview
 
-The flow followed is:
+The design is written in Verilog and consists of multiple logic blocks.
+A top level module selects which block is active based on a control input.
 
-RTL design in Verilog
+The design flow includes:
 
-Simulation and functional verification
+1. RTL design in Verilog
+2. Functional simulation and verification
+3. Waveform analysis using GTKWave
+4. Code coverage analysis
+5. Logic synthesis using Yosys
+6. Static Timing Analysis using OpenSTA
+7. Logical equivalence checking
 
-Waveform analysis using GTKWave
+---
 
-Code coverage analysis
+## Logic Blocks Used
 
-Logic synthesis using Yosys
-
-Static Timing Analysis using OpenSTA
-
-Logical equivalence checking
-
-Logic Blocks Used
-
-Clock Divider
+Clock Divider  
 Reduces the input clock frequency using a counter.
 
-Barrel Shifter
-Shifts input data left or right in a single cycle.
+Barrel Shifter  
+Shifts input data left or right in a single clock cycle.
 
-LFSR
-Generates pseudo random numbers using feedback logic.
+Linear Feedback Shift Register (LFSR)  
+Generates pseudo random sequences using feedback logic.
 
-Parity Generator
+Parity Generator  
 Generates a parity bit for error detection.
 
-Design Behavior
+---
 
-Inputs A and C are stored in registers.
+## Design Behavior
 
-The design works on the positive edge of the clock.
+- Inputs A and C are stored in registers
+- Design operates on the positive edge of the clock
+- Reset is synchronous
+- Output depends on the value of control input C
 
-Reset is synchronous.
+Operation selection:
 
-Based on value of C:
+- C < 51 selects Clock Divider
+- 51 <= C < 100 selects Barrel Shifter
+- 100 <= C <= 128 selects Parity Generator
+- C > 128 selects LFSR
 
-C < 51 selects Clock Divider
+---
 
-51 ≤ C < 100 selects Barrel Shifter
+## Tools Used
 
-100 ≤ C ≤ 128 selects Parity Generator
+- Verilog HDL
+- Icarus Verilog for simulation
+- GTKWave for waveform viewing
+- Covered for code coverage
+- Yosys for logic synthesis
+- OpenSTA for static timing analysis
+- Sky130 standard cell library
 
-C > 128 selects LFSR
+All tools used in this project are open source.
 
-Tools Used
+---
 
-Verilog for RTL design
+## How to Run Simulation
 
-Icarus Verilog for simulation
+Example commands:
 
-GTKWave for waveform viewing
-
-Covered for code coverage
-
-Yosys for synthesis
-
-OpenSTA for timing analysis
-
-Sky130 standard cell library
-
-All tools are open source.
-
-How to Run Simulation
-
-Example command:
-
-iverilog -o sim rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench.v
-vvp sim
+iverilog -o sim rtl_topmodule.v clk_divider.v barrel_shifter.v lfsr.v parity_gen.v testbench.v  
+vvp sim  
 gtkwave dump.vcd
 
-Synthesis and Timing
+---
 
-RTL is synthesized using Yosys.
+## Synthesis and Timing Analysis
 
-Same netlist is used for all timing constraints.
+- RTL is synthesized using Yosys
+- Same gate level netlist is used for all timing constraints
+- Timing analysis is performed using OpenSTA
+- Area remains constant since Yosys is not timing driven
 
-Timing is analyzed using OpenSTA with different clock periods.
+---
 
-Area remains constant because Yosys is not timing driven.
+## Logical Equivalence Checking
 
-Equivalence Checking
+- RTL design is treated as the golden reference
+- Synthesized netlist is treated as the revised design
+- Yosys equivalence checking confirms functional correctness
 
-RTL is treated as the golden design.
+---
 
-Synthesized netlist is treated as the revised design.
+## Results Summary
 
-Yosys equivalence checking confirms both designs are functionally identical.
+- Functional simulation successful
+- Good code coverage achieved
+- Timing varies with clock constraints
+- Area remains unchanged
+- Equivalence check passed
 
-Results Summary
+---
 
-Functional simulation passed
+## Author
 
-Good code coverage achieved
-
-Timing varies with constraints
-
-Area remains unchanged
-
-Equivalence check passed successfully
-
-Author
-
-Ishaan Singhal
-Delhi Technological University
+Ishaan Singhal  
